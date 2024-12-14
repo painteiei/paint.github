@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ของขวัญปัจฉิม</title>
+    <link rel="icon" type="image/png" href="hatching_chick.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>โปรดใส่รหัสผ่านก่อน</h2>
+    <div class="inp">
+        <input type="text" maxlength="1" id="digit1" 
+               oninput="moveToNext(this, 'digit2')" 
+               onkeydown="moveToPrevious(this, null)">
+        <input type="text" maxlength="1" id="digit2" 
+               oninput="moveToNext(this, 'digit3')" 
+               onkeydown="moveToPrevious(this, 'digit1')">
+        <input type="text" maxlength="1" id="digit3" 
+               oninput="moveToNext(this, 'digit4')" 
+               onkeydown="moveToPrevious(this, 'digit2')">
+        <input type="text" maxlength="1" id="digit4" 
+               oninput="moveToNext(this, 'digit5')" 
+               onkeydown="moveToPrevious(this, 'digit3')">
+        <input type="text" maxlength="1" id="digit5" 
+               oninput="moveToNext(this, 'digit6')" 
+               onkeydown="moveToPrevious(this, 'digit4')">
+        <input type="text" maxlength="1" id="digit6" 
+               oninput="moveToNext(this, null)" 
+               onkeydown="moveToPrevious(this, 'digit5')">
+    </div>
+    <button onclick="verifyCode()">ยืนยัน</button>
+
+    <p id="result" style="color: red;"></p>
+
+    <script src="password.js"></script>
+</body>
+</html>

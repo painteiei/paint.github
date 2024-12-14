@@ -1,0 +1,67 @@
+    @font-face { 
+    font-family: Kanit;
+    src: url(Kanit/Kanit-SemiBoldItalic.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Kanit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://w.wallhaven.cc/full/ex/wallhaven-exyo5o.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inp input {
+    width: 70px; /* เพิ่มความกว้าง */
+    height: 70px; /* เพิ่มความสูง */
+    text-align: center;
+    font-size: 24px; /* เพิ่มขนาดตัวอักษร */
+    margin: 10px; /* เพิ่มระยะห่าง */
+    border: 3px solid white; /* ขยายความหนาของเส้นขอบ */
+    border-radius: 12px; /* เพิ่มความโค้งมน */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* ขยายเงาให้ชัดขึ้น */
+    transition: all 0.3s ease;
+    }
+
+.inp input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 6px 16px rgba(76, 175, 80, 0.6);
+    outline: none;
+    background-color: white;
+    }
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+h2 {
+    display: block;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 35px;
+
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
